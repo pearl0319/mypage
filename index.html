@@ -67,13 +67,13 @@
             margin: 20px auto 20px auto;
         }
 
-        .A{
+        .A {
             width: 800px;
             margin: 20px auto 20px auto;
             padding: 20px 20px 20px 20px;
         }
 
-        .mybutton{
+        .mybutton {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -82,7 +82,7 @@
             margin-top: 20px;
         }
 
-        .mybutton>button{
+        .mybutton>button {
             margin-right: 10px;
         }
     </style>
@@ -95,30 +95,42 @@
     </div>
 
     <div class="A">
-    <div class="mypost">
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">영화 url</label>
-        </div>
-        <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">앙</label>
+        <div class="mypost">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">영화 url</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">앙</label>
+            </div>
+
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Comments</label>
+            </div>
+
         </div>
 
-        <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">Comments</label>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">별점</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐⭐⭐</option>
+            </select>
         </div>
 
+        <div class="mybutton">
+            <button type="button" class="btn btn-dark">기록하기</button>
+            <button type="button" class="btn btn-outline-dark">닫기</button>
+
+        </div>
     </div>
 
-    <div class="mybutton">
-        <button type="button" class="btn btn-dark">기록하기</button>
-        <button type="button" class="btn btn-outline-dark">Dark</button>
-
-    </div>
-    </div>
-    
     <div class="mycard">
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
